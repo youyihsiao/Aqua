@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#nav {
+
+}
+
+#banner {
+    background-image: url(./photo/bg.jpg);
+    width: 1280px;
+    height: 100vh;
+    object-fit: cover;
+
+    .right img{
+        width: 500px;
+        height: 100vh;
+        margin-left: 780px;
+        display: grid;
+    }
+}
