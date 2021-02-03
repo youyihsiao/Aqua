@@ -11,11 +11,26 @@
      object-fit: cover;
 }
 
-#banner .right img {
-  width: 500px;
-  height: 100vh;
-  margin-left: 780px;
+#banner .pic {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+#banner .pic img {
+  width: 800px;
+  height: 100vh;
+  display: inline;
+  margin-left: -50px;
+}
+
+#banner .pic #intro {
+  padding: 300px 300px;
+  color: azure;
+}
+
+#banner .pic #intro p {
+  font-size: 18px;
 }
 /*# sourceMappingURL=indexstyle.css.map */

@@ -4,7 +4,6 @@
 }
 
 #nav {
-
 }
 
 #banner {
@@ -13,10 +12,23 @@
     height: 100vh;
     object-fit: cover;
 
-    .right img{
-        width: 500px;
-        height: 100vh;
-        margin-left: 780px;
+    .pic {
         display: grid;
+        grid-template-columns: 40% 60%;
+        img {
+            width: 800px;
+            height: 100vh;
+            display: inline;
+            margin-left: -50px;
+        }
+
+        #intro {
+           padding: 300px 300px ;
+           color: azure;
+
+           p {
+               font-size: 18px;
+           }
+        }
     }
 }
