@@ -15,58 +15,99 @@
 
 #banner .pic img {
   display: inline;
-  margin-left: -200px;
+  margin-left: 200px;
+  width: 100%;
+  height: 100vh;
 }
 
 #banner .pic #intro {
-  padding: 200px 300px;
+  padding: 400px 500px;
   color: azure;
   text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
 }
 
 #banner .pic #intro h1 {
-  font-size: 72px;
+  font-size: 86px;
   letter-spacing: 10px;
 }
 
 #banner .pic #intro h2 {
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 5px;
 }
 
 #prom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
 }
 
-#prom #prom-pic {
-  display: inline;
+#prom #prom-big {
+  margin-left: 100px;
+  display: block;
+  background-image: url(./photo/prom.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
 }
 
-#prom #prom-pic img {
-  height: 100vh;
-  width: 200px;
-  margin: 100px 0 0 100px;
+#prom #prom-big h1 {
+  font-size: 72px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  padding-top: 50px;
+  color: #444c59;
+  text-shadow: 5px 10px 5px gray;
 }
 
 #prom #box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
   margin: 100px 50px 0 auto;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-#prom #box hr {
-  width: 700px;
+#prom #box #box1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding-bottom: 250px;
+}
+
+#prom #box #box2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#prom #box .text {
   text-align: center;
 }
 
-#prom #box .text img {
-  width: 300px;
-  height: 50px;
-  margin: auto 50px;
+#prom #box .text h1 {
+  text-shadow: 5px 3px 3px gray;
+}
+
+#prom #box .text h3 {
+  font-weight: 900;
+}
+
+#prom #box .text h5 {
+  font-weight: 800;
+}
+
+#prom #box .p {
+  text-align: center;
+  padding-top: 50px;
+  text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
 }
 /*# sourceMappingURL=indexstyle.css.map */
