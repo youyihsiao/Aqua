@@ -1,5 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 $tablet: 1024px;
 $moblie: 767px;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
 
 #nav {
 }
@@ -42,9 +50,10 @@ $moblie: 767px;
 #prom {
     display: grid;
     grid-template-columns: 20% 80%;
+    margin-bottom: 100px;
 
     #prom-big {
-        margin-left: 100px;
+        margin-left: 150px;
 
         display: block;
         background-image: url(./photo/prom.png);
@@ -54,7 +63,7 @@ $moblie: 767px;
         width: 50%;
 
         h1 {
-            font-size: 72px;
+            font-size: 100px;
             writing-mode: vertical-lr;
             padding-top: 50px;
 
@@ -74,29 +83,35 @@ $moblie: 767px;
         .cover1 {
             position: absolute;
             right: 95px;
+
+
+            &:hover img {
+                position: relative;
+                right: 670px;
+            }
+
             img {
                 width: 670px;
                 height: 340px;
-                transition:all 1.5s 2s;
-
-                &:hover {
-                    position: relative;
-                    right: 670px;
-                }
+                z-index: 2;
+                right: 0;
+                transition:1.5s;
             }
         }
 
         .cover2 {
             position: absolute;
+
+            &:hover img {
+                position: relative;
+                left: 670px;
+            }
             img {
                 width: 670px;
                 height: 340px;
-                transition:all 1.5s 2s;
-
-                &:hover {
-                    position: relative;
-                    left: 670px;
-                }
+                z-index: 2;
+                left: 0;
+                transition: 1.5s;
             }
         }
 
@@ -115,7 +130,7 @@ $moblie: 767px;
             text-align: center;
 
             h1 {
-                text-shadow: 5px 3px 3px (gray);
+                text-shadow: 5px 3px 1px (rgba(128, 128, 128, 0.514));
             }
 
             h3 {
@@ -132,5 +147,11 @@ $moblie: 767px;
 
             text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
         }
+    }
+}
+
+footer {
+    p {
+        text-align: center;
     }
 }

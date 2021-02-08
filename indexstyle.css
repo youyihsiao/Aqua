@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+}
+
 #banner {
   background-image: url(./photo/bg.jpg);
   width: 100%;
@@ -41,10 +48,11 @@
   display: grid;
   -ms-grid-columns: 20% 80%;
       grid-template-columns: 20% 80%;
+  margin-bottom: 100px;
 }
 
 #prom #prom-big {
-  margin-left: 100px;
+  margin-left: 150px;
   display: block;
   background-image: url(./photo/prom.png);
   background-position: center;
@@ -54,7 +62,7 @@
 }
 
 #prom #prom-big h1 {
-  font-size: 72px;
+  font-size: 100px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -79,32 +87,36 @@
   right: 95px;
 }
 
+#prom #box .cover1:hover img {
+  position: relative;
+  right: 670px;
+}
+
 #prom #box .cover1 img {
   width: 670px;
   height: 340px;
-  -webkit-transition: all 1.5s 2s;
-  transition: all 1.5s 2s;
-}
-
-#prom #box .cover1 img:hover {
-  position: relative;
-  right: 670px;
+  z-index: 2;
+  right: 0;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 #prom #box .cover2 {
   position: absolute;
 }
 
+#prom #box .cover2:hover img {
+  position: relative;
+  left: 670px;
+}
+
 #prom #box .cover2 img {
   width: 670px;
   height: 340px;
-  -webkit-transition: all 1.5s 2s;
-  transition: all 1.5s 2s;
-}
-
-#prom #box .cover2 img:hover {
-  position: relative;
-  left: 670px;
+  z-index: 2;
+  left: 0;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 #prom #box #box1 {
@@ -127,7 +139,7 @@
 }
 
 #prom #box .text h1 {
-  text-shadow: 5px 3px 3px gray;
+  text-shadow: 5px 3px 1px rgba(128, 128, 128, 0.514);
 }
 
 #prom #box .text h3 {
@@ -142,5 +154,9 @@
   text-align: center;
   padding-top: 50px;
   text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
+}
+
+footer p {
+  text-align: center;
 }
 /*# sourceMappingURL=indexstyle.css.map */
