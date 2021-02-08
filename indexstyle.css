@@ -70,8 +70,41 @@
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
   margin-top: 150px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#prom #box .cover1 {
+  position: absolute;
+  right: 95px;
+}
+
+#prom #box .cover1 img {
+  width: 670px;
+  height: 340px;
+  -webkit-transition: all 1.5s 2s;
+  transition: all 1.5s 2s;
+}
+
+#prom #box .cover1 img:hover {
+  position: relative;
+  right: 670px;
+}
+
+#prom #box .cover2 {
+  position: absolute;
+}
+
+#prom #box .cover2 img {
+  width: 670px;
+  height: 340px;
+  -webkit-transition: all 1.5s 2s;
+  transition: all 1.5s 2s;
+}
+
+#prom #box .cover2 img:hover {
+  position: relative;
+  left: 670px;
 }
 
 #prom #box #box1 {

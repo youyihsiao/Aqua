@@ -68,8 +68,37 @@ $moblie: 767px;
         margin: 100px 50px 0 auto;
         grid-template-rows: 50% 50%;
         margin-top: 150px;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
+
+        .cover1 {
+            position: absolute;
+            right: 95px;
+            img {
+                width: 670px;
+                height: 340px;
+                transition:all 1.5s 2s;
+
+                &:hover {
+                    position: relative;
+                    right: 670px;
+                }
+            }
+        }
+
+        .cover2 {
+            position: absolute;
+            img {
+                width: 670px;
+                height: 340px;
+                transition:all 1.5s 2s;
+
+                &:hover {
+                    position: relative;
+                    left: 670px;
+                }
+            }
+        }
 
         #box1 {
             display: grid;
@@ -86,16 +115,15 @@ $moblie: 767px;
             text-align: center;
 
             h1 {
-                text-shadow: 5px 3px 3px(gray);
+                text-shadow: 5px 3px 3px (gray);
             }
-            
+
             h3 {
                 font-weight: 900;
             }
             h5 {
                 font-weight: 800;
             }
-
         }
 
         .p {
