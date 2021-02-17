@@ -269,7 +269,8 @@ h1 {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  padding-top: 50px;
+  padding-top: 100px;
+  margin-left: 25px;
   color: #444c59;
   text-shadow: 5px 10px 5px gray;
 }
