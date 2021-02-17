@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap");
+* {
+  font-family: "Truculenta", sans-serif;
+}
+
 body {
   background-color: #2d4c5c !important;
 }
@@ -186,17 +191,31 @@ body {
   width: 100px;
   text-align: center;
   cursor: pointer;
-  margin: 20px 635px;
+  margin: 50px 876px;
   -webkit-transition: 1.3s;
   transition: 1.3s;
 }
 
 #button:hover {
-  background-color: #5A7BA1;
+  background-color: #ffba3b;
 }
 
 #button a {
   text-decoration: none;
   color: black;
+}
+
+p {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 50px;
+  color: #fae423c4;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+p:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=instyle.css.map */
