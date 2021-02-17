@@ -1,0 +1,202 @@
+@charset "UTF-8";
+body {
+  background-color: #2d4c5c !important;
+}
+
+/* 整個酒杯的部分 */
+#container {
+  height: 370px;
+  margin: 0 auto;
+  /*  超出此範圍的部分都隱藏
+  溢出：隱藏 */
+  overflow: hidden;
+  position: relative;
+  /*  跟文字相隔20px  */
+  top: -20px;
+  /*  調整寬度讓杯子位置適中  */
+  width: 248px;
+}
+
+/* 對最外層 */
+#container div {
+  position: absolute;
+}
+
+.pour {
+  position: absolute;
+  /*  控制位置  */
+  left: 35%;
+  width: 20px;
+  height: 0px;
+  background-color: #edaf32;
+  border-radius: 10px;
+}
+
+/* 酒體 */
+#beaker {
+  /*  設定邊界讓固定的泡沫不會超過杯底  */
+  border: 10px solid #fff;
+  /*  杯子形狀頂部邊界為0  */
+  border-top: 0;
+  /* 杯子高度 */
+  height: 200px;
+  /*  注入液體條的位置  */
+  left: 14px;
+  /*  杯子距離底部0  */
+  bottom: 0;
+  /* 杯寬 */
+  width: 150px;
+}
+
+#liquid {
+  /*  液體的顏色  */
+  background-color: #edaf32;
+  /* 配合杯子形狀設定的液體邊框 */
+  border: 10px solid #edaf32;
+  /*  設定距離底部為0*/
+  bottom: 0;
+  /*  液體起始高對為0  */
+  height: 0px;
+  /* 將多餘的隱藏 */
+  overflow: hidden;
+  /*  液體寬度  */
+  width: 130px;
+}
+
+/* 玻璃材質製作 */
+#liquid:after {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: -10px;
+  content: "";
+  height: 200px;
+  left: -40px;
+  position: absolute;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(15deg);
+  width: 110px;
+}
+
+#liquid .bubble {
+  -webkit-animation-name: bubble;
+  /*   播放動畫次數：持續 */
+  -webkit-animation-iteration-count: infinite;
+  /*   從頭到尾以相同的速度播放動畫： */
+  -webkit-animation-timing-function: linear;
+  background-color: rgba(255, 255, 255, 0.2);
+  bottom: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+/* 為@keyframes動畫指定名稱 */
+@-webkit-keyframes bubble {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: 80px;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 160px;
+  }
+}
+
+.bubble1 {
+  left: 5px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble2 {
+  left: 40px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble3 {
+  left: 90px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble4 {
+  left: 120px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble5 {
+  left: 170px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 800ms;
+}
+
+/* Foam */
+.beer-foam {
+  position: absolute;
+  bottom: 10px;
+}
+
+/*  調整泡沫位子*/
+.foam-1,
+.foam-2,
+.foam-3,
+.foam-4,
+.foam-5 {
+  float: left;
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #fefefe;
+}
+
+.foam-1 {
+  top: -20px;
+  left: -10px;
+}
+
+.foam-2 {
+  top: -30px;
+  left: 10px;
+}
+
+.foam-3 {
+  top: -25px;
+  left: 35px;
+}
+
+.foam-4 {
+  top: -30px;
+  left: 65px;
+}
+
+.foam-5 {
+  top: -20px;
+  left: 90px;
+}
+
+#button {
+  background-color: #E6E9EE;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 635px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#button:hover {
+  background-color: #5A7BA1;
+}
+
+#button a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=instyle.css.map */
