@@ -54,10 +54,6 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
-  -webkit-animation: hide 1s forwards;
-          animation: hide 1s forwards;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 h1 {
@@ -190,10 +186,27 @@ h1 {
           animation-delay: 4s;
 }
 
+@-webkit-keyframes showpic {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+
+@keyframes showpic {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+
 #banner {
   background-image: url(./photo/bg.png);
   width: 100%;
-  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -226,24 +239,6 @@ h1 {
 #banner .pic #intro h2 {
   font-size: 20px;
   letter-spacing: 5px;
-}
-
-@-webkit-keyframes showpic {
-  0% {
-    z-index: 2;
-  }
-  100% {
-    z-index: 3;
-  }
-}
-
-@keyframes showpic {
-  0% {
-    z-index: 2;
-  }
-  100% {
-    z-index: 3;
-  }
 }
 
 #prom {
@@ -367,7 +362,7 @@ h1 {
 
 #prom #box .p {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 70px;
   letter-spacing: 3px;
   text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
 }
