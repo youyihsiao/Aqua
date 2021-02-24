@@ -212,3 +212,41 @@ p {
         transform: scale(1.5);
     }
 }
+
+// 平板
+
+@media screen and (max-width: 1024px) {
+
+    #button {
+    background-color:#E6E9EE;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    margin: 50px 300px;
+    transition: 1.3s;
+
+    &:hover {
+        background-color: rgb(255, 186, 59);
+    }
+
+    a {
+        text-decoration: none;
+        color:black;
+    }
+}
+
+p {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 0px;
+    color: #fae423c4;
+    transition: 1.3s;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+}
