@@ -204,34 +204,6 @@ h1 {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  #open {
-    width: 100%;
-    height: 100vh;
-  }
-  #banner {
-    width: 100%;
-    height: 100vh;
-  }
-  #banner .pic {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 30% 70%;
-        grid-template-columns: 30% 70%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #open {
-    width: 100%;
-    height: 100vh;
-  }
-  #banner {
-    width: 100%;
-    height: 100vh;
-  }
-}
-
 #banner {
   background-image: url(./photo/bg.png);
   width: 100%;
@@ -365,30 +337,36 @@ h1 {
       grid-template-columns: 50% 50%;
 }
 
-#prom #box .text {
+#prom #box #text,
+#prom #box #text2 {
   text-align: center;
 }
 
-#prom #box .text h1 {
+#prom #box #text h1,
+#prom #box #text2 h1 {
   text-shadow: 5px 3px 1px rgba(128, 128, 128, 0.514);
   grid-gap: 3px;
 }
 
-#prom #box .text h3 {
+#prom #box #text h3,
+#prom #box #text2 h3 {
   font-weight: 900;
   letter-spacing: 5px;
 }
 
-#prom #box .text h5 {
+#prom #box #text h5,
+#prom #box #text2 h5 {
   font-weight: 800;
   letter-spacing: 5px;
 }
 
-#prom #box .text .pp {
+#prom #box #text .pp,
+#prom #box #text2 .pp {
   letter-spacing: 3px;
 }
 
-#prom #box .p {
+#prom #box #p1,
+#prom #box #p2 {
   text-align: center;
   padding-top: 70px;
   letter-spacing: 3px;
@@ -397,5 +375,193 @@ h1 {
 
 footer p {
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #open {
+    width: 100%;
+    height: 100vh;
+  }
+  #banner {
+    background-image: url(./photo/bg.png);
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  #banner .pic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  #banner .pic img {
+    display: inline;
+    margin-left: 80px;
+    width: 100%;
+    height: 100vh;
+  }
+  #banner .pic #intro {
+    padding: 570px 80px;
+    color: azure;
+    text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
+  }
+  #banner .pic #intro h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+  }
+  #banner .pic #intro h2 {
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+  #prom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 80%;
+        grid-template-columns: 10% 80%;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+  #prom #prom-big {
+    margin-left: 50px;
+    display: block;
+    background-image: url(./photo/prom.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  #prom #prom-big h1 {
+    font-size: 100px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    padding-top: 100px;
+    margin-left: 25px;
+    color: #444c59;
+    text-shadow: 5px 10px 5px gray;
+  }
+  #prom #box {
+    display: -ms-grid;
+    display: grid;
+    margin: 0;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: absolute;
+    -webkit-animation: none;
+            animation: none;
+    -webkit-animation-delay: none;
+            animation-delay: none;
+  }
+  #prom #box .cover1 {
+    position: relative;
+    right: 0px;
+    top: none;
+    left: 230px;
+    bottom: 100px;
+  }
+  #prom #box .cover1:hover img {
+    position: none;
+    right: 0px;
+  }
+  #prom #box .cover1 img {
+    width: 480px;
+    height: 250px;
+    z-index: 2;
+    right: 0;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  #prom #box .cover2 {
+    position: relative;
+    right: 0px;
+    top: 300px;
+    left: 230px;
+    bottom: none;
+  }
+  #prom #box .cover2:hover img {
+    position: none;
+    right: 0px;
+  }
+  #prom #box .cover2 img {
+    width: 480px;
+    height: 250px;
+    z-index: 2;
+    right: 0;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  #prom #box #box1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    padding-bottom: 250px;
+  }
+  #prom #box #box2 {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  #prom #box #text1 {
+    text-align: center;
+    padding-left: 300px;
+    padding-top: none;
+  }
+  #prom #box #text1 h1 {
+    text-shadow: 5px 3px 1px rgba(128, 128, 128, 0.514);
+    grid-gap: 3px;
+  }
+  #prom #box #text1 h3 {
+    font-weight: 900;
+    letter-spacing: 5px;
+  }
+  #prom #box #text1 h5 {
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+  #prom #box #text1 .pp {
+    letter-spacing: 3px;
+  }
+  #prom #box #p1 {
+    text-align: center;
+    padding-left: 250px;
+    letter-spacing: 3px;
+    text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
+  }
+  #prom #box #text2 {
+    text-align: center;
+    padding-left: 300px;
+    padding-top: 400px;
+  }
+  #prom #box #p2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 300px;
+    letter-spacing: 3px;
+    text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
+  }
+  footer {
+    padding-top: 1800px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #open {
+    width: 100%;
+    height: 100vh;
+  }
+  #banner {
+    width: 100%;
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=indexstyle.css.map */
