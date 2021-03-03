@@ -337,30 +337,30 @@ h1 {
       grid-template-columns: 50% 50%;
 }
 
-#prom #box #text,
+#prom #box #text1,
 #prom #box #text2 {
   text-align: center;
 }
 
-#prom #box #text h1,
+#prom #box #text1 h1,
 #prom #box #text2 h1 {
   text-shadow: 5px 3px 1px rgba(128, 128, 128, 0.514);
   grid-gap: 3px;
 }
 
-#prom #box #text h3,
+#prom #box #text1 h3,
 #prom #box #text2 h3 {
   font-weight: 900;
   letter-spacing: 5px;
 }
 
-#prom #box #text h5,
+#prom #box #text1 h5,
 #prom #box #text2 h5 {
   font-weight: 800;
   letter-spacing: 5px;
 }
 
-#prom #box #text .pp,
+#prom #box #text1 .pp,
 #prom #box #text2 .pp {
   letter-spacing: 3px;
 }
@@ -686,27 +686,32 @@ footer p {
     -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
   }
-  #prom #box #text1, #prom #box #text2 {
+  #prom #box #text1,
+  #prom #box #text2 {
     text-align: center;
     padding-left: 5px;
     padding-top: 0px;
   }
-  #prom #box #text1 h1, #prom #box #text2 h1 {
+  #prom #box #text1 h1,
+  #prom #box #text2 h1 {
     text-shadow: 5px 3px 1px rgba(128, 128, 128, 0.514);
     grid-gap: 3px;
     font-size: 21px;
   }
-  #prom #box #text1 h3, #prom #box #text2 h3 {
+  #prom #box #text1 h3,
+  #prom #box #text2 h3 {
     font-weight: 900;
     letter-spacing: 5px;
     font-size: 16px;
   }
-  #prom #box #text1 h5, #prom #box #text2 h5 {
+  #prom #box #text1 h5,
+  #prom #box #text2 h5 {
     font-weight: 800;
     letter-spacing: 5px;
     font-size: 12px;
   }
-  #prom #box #text1 .pp, #prom #box #text2 .pp {
+  #prom #box #text1 .pp,
+  #prom #box #text2 .pp {
     letter-spacing: 3px;
     font-size: 8px;
   }
