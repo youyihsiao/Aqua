@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=beer.css.map */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#bg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#circle {
+  width: 900px;
+  height: 900px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: -450px;
+  background-image: url(./photo/beer.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: -10px 275px;
+}
+
+#circle h1 {
+  color: white;
+  padding-left: 500px;
+  padding-top: 110px;
+  font-size: 90px;
+  text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
+}
+
+#content {
+  background-image: url(./photo/p1.png);
+  background-position: 950px -100px;
+}
+
+#content ul {
+  padding-top: 200px;
+}
+
+#content li {
+  padding-bottom: 50px;
+}
+/*# sourceMappingURL=beer.css.map */
