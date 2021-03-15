@@ -37,9 +37,10 @@
 
 #circle h1 {
   color: white;
-  padding-left: 500px;
+  padding-left: 300px;
   padding-top: 110px;
-  font-size: 90px;
+  font-size: 60px;
+  text-align: center;
   text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -115,9 +116,10 @@
   }
   #circle h1 {
     color: #563F2E;
-    padding-left: 500px;
-    padding-top: 50px;
-    font-size: 90px;
+    padding-left: 300px;
+    padding-top: 110px;
+    font-size: 60px;
+    text-align: center;
     text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
   }
   #content {
@@ -178,9 +180,10 @@
   }
   #circle h1 {
     color: #563F2E;
-    padding-left: 450px;
-    padding-top: 50px;
-    font-size: 90px;
+    padding-left: 300px;
+    padding-top: 110px;
+    font-size: 60px;
+    text-align: center;
     text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
   }
   #content {
@@ -214,4 +217,4 @@
             transform: scale(1.3);
   }
 }
-/*# sourceMappingURL=food.css.map */
+/*# sourceMappingURL=non-alc.css.map */

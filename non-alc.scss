@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap");
+
+
 * {
   padding: 0;
   margin: 0;
@@ -16,10 +18,8 @@
 }
 
 #bg {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  grid-template-columns: 40% 60%;
   padding-top: 100px;
 }
 
@@ -29,6 +29,7 @@
   background-color: black;
   border-radius: 50%;
   margin-left: -450px;
+
   background-image: url(./photo/food.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -37,38 +38,36 @@
 
 #circle h1 {
   color: white;
-  padding-left: 500px;
+  padding-left: 300px;
   padding-top: 110px;
-  font-size: 90px;
+  font-size: 60px;
+  text-align: center;
   text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
 
-#circle h1:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  color: #F0D046;
+  transition: 0.8s;
+
+  &:hover {
+    transform: scale(1.3);
+    color: #F0D046;
+  }
 }
 
 #content {
   background-image: url(./photo/bread04.png);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-position: -300px 200px;
   overflow: hidden;
-}
 
-#content p {
-  padding-bottom: 50px;
-  color: dimgray;
-  font-weight: 200;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
+  p {
+    padding-bottom: 50px;
+    color: dimgray;
+    font-weight: 200;
 
-#content p:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+    transition: 0.8s;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
 }
 
 #content ul {
@@ -78,15 +77,13 @@
 #content li {
   padding-bottom: 10px;
   font-size: 24px;
-  text-shadow: 2px 3px 2px #636060;
+  text-shadow: 2px 3px 2px rgb(99, 96, 96);
   font-weight: 800;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
 
-#content li:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transition: 0.8s;
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -95,60 +92,65 @@
     width: 100%;
     z-index: 3;
   }
+
   #bg {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
     padding-top: 100px;
   }
+
   #circle {
     width: 900px;
     height: 900px;
-    background-color: #F0A986;
+    background-color:#F0A986;
     border-radius: 50%;
     margin-left: -450px;
+
     background-image: url(./photo/food.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: -10px 275px;
   }
+
   #circle h1 {
     color: #563F2E;
-    padding-left: 500px;
-    padding-top: 50px;
-    font-size: 90px;
+    padding-left: 300px;
+    padding-top: 110px;
+    font-size: 60px;
+    text-align: center;
     text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
   }
+
   #content {
     background-image: url(./photo/Aa-01.png);
     background-position: 1200px -100px;
+
+    p {
+      padding-bottom: 50px;
+      color: dimgray;
+      font-weight: 200;
+
+      transition: 0.8s;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
   }
-  #content p {
-    padding-bottom: 50px;
-    color: dimgray;
-    font-weight: 200;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
-  }
-  #content p:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
+
   #content ul {
     padding-top: 150px;
   }
+
   #content li {
     padding-bottom: 10px;
     font-size: 24px;
-    text-shadow: 2px 3px 2px #636060;
+    text-shadow: 2px 3px 2px rgb(99, 96, 96);
     font-weight: 800;
-    -webkit-transition: 0.8s;
+
     transition: 0.8s;
-  }
-  #content li:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
 
@@ -158,60 +160,67 @@
     width: 100%;
     z-index: 3;
   }
+
   #bg {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
     padding-top: 100px;
   }
+
   #circle {
     width: 900px;
     height: 900px;
     background-color: #F0A986;
     border-radius: 50%;
     margin-left: -450px;
+
     background-image: url(./photo/food.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: -100px 275px;
+
   }
+
   #circle h1 {
     color: #563F2E;
-    padding-left: 450px;
-    padding-top: 50px;
-    font-size: 90px;
+    padding-left: 300px;
+    padding-top: 110px;
+    font-size: 60px;
+    text-align: center;
     text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
+
   }
+
   #content {
     background-image: url(./photo/bread04.png);
     background-position: 0px -100px;
+
+
+    p {
+      padding-bottom: 50px;
+      color: dimgray;
+      font-weight: 200;
+
+      transition: 0.8s;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
   }
-  #content p {
-    padding-bottom: 50px;
-    color: dimgray;
-    font-weight: 200;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
-  }
-  #content p:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
+
   #content ul {
     padding-top: 150px;
   }
+
   #content li {
     padding-bottom: 10px;
     font-size: 20px;
-    text-shadow: 2px 3px 2px #636060;
+    text-shadow: 2px 3px 2px rgb(99, 96, 96);
     font-weight: 800;
-    -webkit-transition: 0.8s;
+
     transition: 0.8s;
-  }
-  #content li:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
-/*# sourceMappingURL=food.css.map */

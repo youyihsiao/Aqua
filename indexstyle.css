@@ -6,6 +6,10 @@
   font-family: "Truculenta", sans-serif;
 }
 
+.container-fluid {
+  padding: 0 !important;
+}
+
 :root {
   --bg-color: #d8d8d8;
 }
