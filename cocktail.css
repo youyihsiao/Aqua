@@ -29,7 +29,7 @@
   background-color: black;
   border-radius: 50%;
   margin-left: -450px;
-  background-image: url(./photo/food.png);
+  background-image: url(./photo/cocktail.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: -10px 275px;
@@ -37,7 +37,7 @@
 
 #circle h1 {
   color: white;
-  padding-left: 500px;
+  padding-left: 480px;
   padding-top: 110px;
   font-size: 90px;
   text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
@@ -52,9 +52,8 @@
 }
 
 #content {
-  background-image: url(./photo/bread04.png);
-  background-repeat: no-repeat;
-  background-position: -300px 200px;
+  background-image: url(./photo/p2.png);
+  background-position: 1230px -240px;
   overflow: hidden;
 }
 
@@ -108,21 +107,22 @@
     background-color: #F0A986;
     border-radius: 50%;
     margin-left: -450px;
-    background-image: url(./photo/food.png);
+    background-image: url(./photo/cocktail.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: -10px 275px;
   }
   #circle h1 {
     color: #563F2E;
-    padding-left: 500px;
+    padding-left: 480px;
     padding-top: 50px;
     font-size: 90px;
     text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
   }
   #content {
-    background-image: url(./photo/Aa-01.png);
-    background-position: 1200px -100px;
+    background-image: url(./photo/p2.png);
+    background-position: 1230px -240px;
+    overflow: hidden;
   }
   #content p {
     padding-bottom: 50px;
@@ -171,10 +171,10 @@
     background-color: #F0A986;
     border-radius: 50%;
     margin-left: -450px;
-    background-image: url(./photo/food.png);
+    background-image: url(./photo/cocktail.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: -100px 275px;
+    background-position: -10px 275px;
   }
   #circle h1 {
     color: #563F2E;
@@ -184,8 +184,9 @@
     text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
   }
   #content {
-    background-image: url(./photo/bread04.png);
-    background-position: 0px -100px;
+    background-image: url(./photo/p2.png);
+    background-position: 1230px -240px;
+    overflow: hidden;
   }
   #content p {
     padding-bottom: 50px;

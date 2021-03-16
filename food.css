@@ -121,8 +121,10 @@
     text-shadow: 5px 4px 5px rgba(204, 204, 204, 0.856);
   }
   #content {
-    background-image: url(./photo/Aa-01.png);
-    background-position: 1200px -100px;
+    background-image: url(./photo/bread04.png);
+    background-repeat: no-repeat;
+    background-position: -300px 200px;
+    overflow: hidden;
   }
   #content p {
     padding-bottom: 50px;
@@ -185,7 +187,9 @@
   }
   #content {
     background-image: url(./photo/bread04.png);
-    background-position: 0px -100px;
+    background-repeat: no-repeat;
+    background-position: -300px 200px;
+    overflow: hidden;
   }
   #content p {
     padding-bottom: 50px;
