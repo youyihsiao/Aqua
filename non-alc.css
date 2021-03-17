@@ -15,6 +15,10 @@
   z-index: 3;
 }
 
+.navbar-brand {
+  padding-left: 30px;
+}
+
 #bg {
   display: -ms-grid;
   display: grid;
