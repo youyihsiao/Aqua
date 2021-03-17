@@ -304,7 +304,7 @@ h1 {
 }
 
 #prom #box .cover1 img {
-  width: 670px;
+  width: 675px;
   height: 340px;
   z-index: 2;
   right: 0;
@@ -322,7 +322,7 @@ h1 {
 }
 
 #prom #box .cover2 img {
-  width: 670px;
+  width: 675px;
   height: 340px;
   z-index: 2;
   left: 0;
@@ -371,12 +371,6 @@ h1 {
 #prom #box #text1 .pp,
 #prom #box #text2 .pp {
   letter-spacing: 3px;
-}
-
-#prom #box #text1 hr,
-#prom #box #text2 hr {
-  width: 300px;
-  padding: 0 auto;
 }
 
 #prom #box #p1,
