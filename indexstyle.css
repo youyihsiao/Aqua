@@ -373,6 +373,12 @@ h1 {
   letter-spacing: 3px;
 }
 
+#prom #box #text1 hr,
+#prom #box #text2 hr {
+  width: 300px;
+  padding: 0 auto;
+}
+
 #prom #box #p1,
 #prom #box #p2 {
   text-align: center;
@@ -747,9 +753,6 @@ footer p {
   footer {
     padding-top: 2300px;
     text-align: center;
-  }
-  hr {
-    width: 300px;
   }
 }
 /*# sourceMappingURL=indexstyle.css.map */

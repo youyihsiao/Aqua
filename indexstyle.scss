@@ -293,6 +293,11 @@ h1 {
             .pp {
                 letter-spacing: 3px;
             }
+
+            hr {
+                width: 300px;
+                padding: 0 auto;
+            }
         }
 
         #p1,
@@ -701,7 +706,5 @@ footer {
         text-align: center;
     }
 
-    hr {
-        width: 300px;
-    }
+
 }
