@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Truculenta", sans-serif;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+#box {
+    margin-left: 15px;
+
+    .card {
+        display: inline-block;
+        margin: 30px;
+        // border-style: none;
+
+        img {
+            border-radius: 50% !important;
+            object-fit: cover;
+            height: 300px;
+            transition: 1s;
+            &:hover {
+                transform: scale(0.8);
+                border-radius: 30% !important;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            background: #000;
+            border-style: none;
+            padding: 4px 10px;
+            margin: 30px auto;
+            width: 100px;
+        }
+
+        h5 {
+            text-align: center;
+        }
+    }
+}
+
+#words {
+    padding-top: 100px;
+
+    h1 {
+        text-align: center;
+    }
+
+    #one {
+        width: 300px;
+        margin: 10px auto;
+        color: brown;
+    }
+
+    #two {
+        width: 600px;
+        margin: 10px auto;
+        color: brown;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+// RWD
+
+@media screen and (max-width: 1024px) {
+    #words {
+        #two {
+            text-align: center;
+            width: 300px;
+        }
+    }
+
+    #box {
+        padding: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #words {
+        #two {
+            text-align: center;
+            width: 300px;
+        }
+    }
+
+    #box {
+        padding: 0 auto;
+    }
+}

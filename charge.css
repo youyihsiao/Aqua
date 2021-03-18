@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Truculenta", sans-serif;
+}
+
+#nav {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar-brand {
+  padding-left: 30px;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+#box {
+  margin-left: 15px;
+}
+
+#box .card {
+  display: inline-block;
+  margin: 30px;
+}
+
+#box .card img {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#box .card img:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  border-radius: 30% !important;
+}
+
+#box .card p {
+  text-align: center;
+}
+
+#box .card .btn {
+  display: block;
+  background: #000;
+  border-style: none;
+  padding: 4px 10px;
+  margin: 30px auto;
+  width: 100px;
+}
+
+#box .card h5 {
+  text-align: center;
+}
+
+#words {
+  padding-top: 100px;
+}
+
+#words h1 {
+  text-align: center;
+}
+
+#words #one {
+  width: 300px;
+  margin: 10px auto;
+  color: brown;
+}
+
+#words #two {
+  width: 600px;
+  margin: 10px auto;
+  color: brown;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #words #two {
+    text-align: center;
+    width: 300px;
+  }
+  #box {
+    padding: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #words #two {
+    text-align: center;
+    width: 300px;
+  }
+  #box {
+    padding: 0 auto;
+  }
+}
+/*# sourceMappingURL=charge.css.map */
