@@ -136,4 +136,9 @@ span {
   width: 700px;
   height: 700px;
 }
+
+#map footer {
+  text-align: center;
+  padding-top: 50px;
+}
 /*# sourceMappingURL=about.css.map */
