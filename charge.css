@@ -57,8 +57,20 @@
   width: 100px;
 }
 
+#box .card .btn:hover {
+  background-color: darkgrey;
+}
+
 #box .card h5 {
   text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#box .card h5:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 #words {
@@ -67,6 +79,14 @@
 
 #words h1 {
   text-align: center;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#words h1:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: firebrick;
 }
 
 #words #one {
@@ -101,7 +121,7 @@ footer {
     width: 300px;
   }
   #box {
-    padding: 0px  0px;
+    padding: 0px 0px;
   }
   footer {
     padding-top: 1400px;
