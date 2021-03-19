@@ -21,7 +21,9 @@
 }
 
 #box {
-    margin-left: 15px;
+    padding: 100px 245px;
+    height: 100vh;
+    
 
     .card {
         display: inline-block;
@@ -59,7 +61,7 @@
 }
 
 #words {
-    padding-top: 100px;
+    padding-top: 150px;
 
     h1 {
         text-align: center;
@@ -93,9 +95,10 @@ footer {
     }
 
     #box {
-        padding: 0 auto;
+        padding: 0px 0px;
     }
 }
+
 
 @media screen and (max-width: 767px) {
     #words {
@@ -106,6 +109,10 @@ footer {
     }
 
     #box {
-        padding: 0 auto;
+        padding: 0px  0px;
+    }
+
+    footer {
+        padding-top: 1400px;
     }
 }

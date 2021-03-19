@@ -20,7 +20,8 @@
 }
 
 #box {
-  margin-left: 15px;
+  padding: 100px 245px;
+  height: 100vh;
 }
 
 #box .card {
@@ -61,7 +62,7 @@
 }
 
 #words {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 #words h1 {
@@ -90,7 +91,7 @@ footer {
     width: 300px;
   }
   #box {
-    padding: 0 auto;
+    padding: 0px 0px;
   }
 }
 
@@ -100,7 +101,10 @@ footer {
     width: 300px;
   }
   #box {
-    padding: 0 auto;
+    padding: 0px  0px;
+  }
+  footer {
+    padding-top: 1400px;
   }
 }
 /*# sourceMappingURL=charge.css.map */
