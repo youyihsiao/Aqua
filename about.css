@@ -70,42 +70,6 @@ span {
   color: slategrey;
 }
 
-#title {
-  font-size: 180px;
-  margin-top: 80px;
-  color: #f0ffff;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  padding-left: 15px;
-  opacity: 0.83;
-  font-weight: 600;
-}
-
-body {
-  background-image: url("paper.gif");
-}
-
-#map {
-  padding-top: 10px;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-left: 10px;
-  text-align: center;
-}
-
-#map img {
-  height: 1400px;
-  width: 1400px;
-}
-
-hr {
-  width: 1500px;
-  margin: 0 auto;
-  margin-top: -1px;
-  padding-top: -1px;
-}
-
 #top {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -158,14 +122,18 @@ hr {
 }
 
 #map {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  padding-left: 650px;
 }
 
-#map #in h3 {
-  text-align: left;
+#map h3 {
+  text-align: center;
   text-shadow: 3px 2px 3px #6d6d6d;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#map img {
+  width: 700px;
+  height: 700px;
 }
 /*# sourceMappingURL=about.css.map */

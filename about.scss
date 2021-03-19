@@ -67,42 +67,6 @@ span {
     }
 }
 
-#title {
-    font-size: 180px;
-    margin-top: 80px;
-    color: #f0ffff;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    padding-left: 15px;
-    opacity: 0.83;
-    font-weight: 600;
-}
-body {
-    background-image: url("paper.gif");
-}
-
-// 地圖
-#map {
-    padding-top: 10px;
-    margin-top: 10px;
-    padding-left: 10px;
-    margin-left: 10px;
-    text-align: center;
-
-    img {
-        height: 1400px;
-        width: 1400px;
-    }
-}
-// 分隔線
-hr {
-    width: 1500px;
-    margin: 0 auto;
-    margin-top: -1px;
-    padding-top: -1px;
-}
-
 // 介紹頁
 
 #top {
@@ -116,6 +80,7 @@ hr {
         text-align: center;
     }
 }
+
 #about {
     margin-left: 265px;
     display: grid;
@@ -132,22 +97,18 @@ hr {
 
         #p-1 {
             font-size: 20px;
-
         }
 
         #p-2 {
             font-size: 20px;
-
         }
 
         h2 {
-
             padding-top: 50px;
         }
 
         #p-3 {
             font-size: 25px;
-
         }
 
         hr {
@@ -159,20 +120,19 @@ hr {
 // MAP
 
 #map {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-    #in {
-        h3 {
-            text-align: left;
-            text-shadow: 3px 2px 3px rgb(109, 109, 109);
-        }
-    }
 
-    #mapp {
+    padding-left:650px ;
+
+        h3 {
+            text-align: center;
+            text-shadow: 3px 2px 3px rgb(109, 109, 109);
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
 
         img {
-
+            width: 700px;
+            height: 700px;
         }
-    }
+    
 }
