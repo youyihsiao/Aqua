@@ -8,6 +8,7 @@ $moblie: 767px;
     padding: 0;
     margin: 0;
     font-family: "Truculenta", sans-serif;
+    box-sizing: border-box;
 }
 
 .container-fluid {
@@ -176,6 +177,7 @@ h1 {
             padding: 400px 500px;
             color: azure;
             text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
+            overflow: hidden;
 
             h1 {
                 font-size: 86px;
@@ -204,6 +206,7 @@ h1 {
         background-size: contain;
         background-repeat: no-repeat;
         width: 50%;
+        overflow: hidden;
 
         h1 {
             font-size: 100px;
@@ -301,6 +304,7 @@ h1 {
             text-align: center;
             padding-top: 70px;
             letter-spacing: 3px;
+            overflow: hidden;
 
             text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
         }
@@ -358,7 +362,7 @@ footer {
 
     #prom {
         display: grid;
-        grid-template-columns: 10% 80%;
+        grid-template-columns: 20% 80%;
         margin-bottom: 100px;
         overflow: hidden;
 
