@@ -58,6 +58,7 @@ span {
         border: rgb(0, 0, 0);
         text-shadow: 3px 2px 5px rgb(68, 66, 66);
         cursor: pointer;
+        overflow: hidden;
 
         transition: 0.8s;
         &:hover {
@@ -75,9 +76,11 @@ span {
 
     h1 {
         text-align: center;
+        overflow: hidden;
     }
     h3 {
         text-align: center;
+        overflow: hidden;
     }
 }
 
@@ -97,18 +100,22 @@ span {
 
         #p-1 {
             font-size: 20px;
+            overflow: hidden;
         }
 
         #p-2 {
             font-size: 20px;
+            overflow: hidden;
         }
 
         h2 {
             padding-top: 50px;
+            overflow: hidden;
         }
 
         #p-3 {
             font-size: 25px;
+            overflow: hidden;
         }
 
         hr {
@@ -128,6 +135,7 @@ span {
             text-shadow: 3px 2px 3px rgb(109, 109, 109);
             padding-top: 100px;
             padding-bottom: 50px;
+            overflow: hidden;
         }
 
         img {
@@ -138,6 +146,8 @@ span {
         footer {
            text-align: center;
            padding-top: 50px;
+           position: fixed;
+           bottom: 0;
         }
     
 }
