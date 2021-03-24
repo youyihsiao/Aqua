@@ -10,6 +10,7 @@
 
 .container-fluid {
   padding: 0 !important;
+  overflow: hidden;
 }
 
 :root {
@@ -17,7 +18,7 @@
 }
 
 body {
-  position: relative;
+  width: 100%;
 }
 
 @-webkit-keyframes hide {
@@ -53,7 +54,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: #000;
   background-color: var(--bg-color);
@@ -258,6 +259,7 @@ h1 {
   -ms-grid-columns: 20% 80%;
       grid-template-columns: 20% 80%;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 #prom #prom-big {
@@ -340,6 +342,7 @@ h1 {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   padding-bottom: 250px;
+  overflow: hidden;
 }
 
 #prom #box #box2 {
@@ -386,8 +389,10 @@ h1 {
   text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
 }
 
-footer p {
-  text-align: center;
+footer {
+  text-align: left;
+  padding-top: 50px;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -409,13 +414,13 @@ footer p {
         grid-template-columns: 40% 60%;
   }
   #banner .pic img {
-    display: inline;
+    display: none;
     margin-left: 80px;
     width: 100%;
     height: 100vh;
   }
   #banner .pic #intro {
-    padding: 570px 80px;
+    padding: 570px 50px;
     color: azure;
     text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
   }
@@ -433,13 +438,13 @@ footer p {
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%;
     margin-bottom: 100px;
-    overflow: hidden;
+    height: 2000px;
   }
   #prom #prom-big {
     margin-left: 50px;
     display: block;
     background-image: url(./photo/prom.png);
-    background-position: center;
+    background-position: 0 400px;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -458,11 +463,11 @@ footer p {
     display: -ms-grid;
     display: grid;
     margin: 0;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
-    margin-top: 150px;
-    margin-left: 80px;
-    margin-right: 80px;
+    -ms-grid-rows: 50% 50% 50%;
+        grid-template-rows: 50% 50% 50%;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
     position: absolute;
     -webkit-animation: none;
             animation: none;
@@ -473,15 +478,17 @@ footer p {
     position: relative;
     right: 0px;
     top: none;
-    left: 230px;
+    left: 0px;
     bottom: 100px;
+    padding-top: 100px;
+    padding-left: 300px;
   }
   #prom #box .cover1:hover img {
     position: none;
     right: 0px;
   }
   #prom #box .cover1 img {
-    width: 480px;
+    width: 400px;
     height: 250px;
     z-index: 2;
     right: 0;
@@ -491,16 +498,17 @@ footer p {
   #prom #box .cover2 {
     position: relative;
     right: 0px;
-    top: 300px;
-    left: 230px;
+    top: 0;
+    left: 0px;
     bottom: none;
+    padding-left: 300px;
   }
   #prom #box .cover2:hover img {
     position: none;
     right: 0px;
   }
   #prom #box .cover2 img {
-    width: 480px;
+    width: 400px;
     height: 250px;
     z-index: 2;
     right: 0;
@@ -519,8 +527,8 @@ footer p {
   #prom #box #box2 {
     -ms-grid-columns: none;
         grid-template-columns: none;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
+    -ms-grid-rows: 50% 50% 50%;
+        grid-template-rows: 50% 50% 50%;
   }
   #prom #box #text1 {
     text-align: center;
@@ -551,18 +559,19 @@ footer p {
   #prom #box #text2 {
     text-align: center;
     padding-left: 300px;
-    padding-top: 400px;
+    padding-top: 100px;
   }
   #prom #box #p2 {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 300px;
+    padding-left: 250px;
     letter-spacing: 3px;
     text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
   }
+  hr {
+    width: 300px;
+    margin: 0 auto;
+  }
   footer {
-    padding-top: 1800px;
     text-align: center;
   }
 }
@@ -572,6 +581,9 @@ footer p {
     width: 100%;
     height: 100vh;
   }
+  .container-fluid {
+    width: 100%;
+  }
   #banner {
     background-image: url(./photo/bg.png);
     width: 100%;
@@ -580,7 +592,8 @@ footer p {
     overflow: hidden;
   }
   #banner .pic {
-    display: block;
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
   }
@@ -591,7 +604,7 @@ footer p {
     height: 100vh;
   }
   #banner .pic #intro {
-    padding: 200px 10px;
+    padding: 570px 50px;
     color: azure;
     text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
   }
@@ -606,39 +619,38 @@ footer p {
   #prom {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 10% 80%;
-        grid-template-columns: 10% 80%;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
     margin-bottom: 100px;
-    overflow: hidden;
   }
   #prom #prom-big {
-    margin-left: 10px;
-    display: none;
+    margin-left: 0px;
+    display: block;
     background-image: url(./photo/prom.png);
-    background-position: center;
+    background-position: 0 250px;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
   }
   #prom #prom-big h1 {
-    font-size: 30px;
+    font-size: 70px;
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
-    padding-top: 50px;
+    padding-top: 100px;
     margin-left: 25px;
     color: #444c59;
-    text-shadow: 3px 10px 5px gray;
+    text-shadow: 5px 10px 5px gray;
   }
   #prom #box {
     display: -ms-grid;
     display: grid;
     margin: 0;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
-    margin-top: 150px;
-    margin-left: 5px;
-    margin-right: 5px;
+    -ms-grid-rows: 50% 50% 50%;
+        grid-template-rows: 50% 50% 50%;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
     position: absolute;
     -webkit-animation: none;
             animation: none;
@@ -649,16 +661,18 @@ footer p {
     position: relative;
     right: 0px;
     top: none;
-    left: 25px;
-    height: 300px;
+    left: 0px;
+    bottom: 100px;
+    padding-top: 100px;
+    padding-left: 300px;
   }
   #prom #box .cover1:hover img {
     position: none;
     right: 0px;
   }
   #prom #box .cover1 img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     z-index: 2;
     right: 0;
     -webkit-transition: 1.5s;
@@ -667,18 +681,18 @@ footer p {
   #prom #box .cover2 {
     position: relative;
     right: 0px;
-    top: 100px;
-    left: 25px;
+    top: 0;
+    left: 0px;
     bottom: none;
-    height: 200px;
+    padding-left: 300px;
   }
   #prom #box .cover2:hover img {
     position: none;
     right: 0px;
   }
   #prom #box .cover2 img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     z-index: 2;
     right: 0;
     -webkit-transition: 1.5s;
@@ -696,61 +710,51 @@ footer p {
   #prom #box #box2 {
     -ms-grid-columns: none;
         grid-template-columns: none;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
+    -ms-grid-rows: 50% 50% 50%;
+        grid-template-rows: 50% 50% 50%;
   }
-  #prom #box #text1,
-  #prom #box #text2 {
+  #prom #box #text1 {
     text-align: center;
-    padding-left: 5px;
-    padding-top: 0px;
+    padding-left: 300px;
+    padding-top: none;
   }
-  #prom #box #text1 h1,
-  #prom #box #text2 h1 {
+  #prom #box #text1 h1 {
     text-shadow: 5px 3px 1px rgba(128, 128, 128, 0.514);
     grid-gap: 3px;
-    font-size: 21px;
   }
-  #prom #box #text1 h3,
-  #prom #box #text2 h3 {
+  #prom #box #text1 h3 {
     font-weight: 900;
     letter-spacing: 5px;
-    font-size: 16px;
   }
-  #prom #box #text1 h5,
-  #prom #box #text2 h5 {
+  #prom #box #text1 h5 {
     font-weight: 800;
     letter-spacing: 5px;
-    font-size: 12px;
   }
-  #prom #box #text1 .pp,
-  #prom #box #text2 .pp {
+  #prom #box #text1 .pp {
     letter-spacing: 3px;
-    font-size: 8px;
   }
   #prom #box #p1 {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 150px;
-    padding-left: 5px;
+    padding-left: 250px;
     letter-spacing: 3px;
     text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
   }
   #prom #box #text2 {
     text-align: center;
-    padding-left: 5px;
-    padding-top: 200px;
+    padding-left: 300px;
+    padding-top: 100px;
   }
   #prom #box #p2 {
     text-align: center;
-    padding-top: 0px;
-    padding-bottom: 100px;
-    padding-left: 5px;
+    padding-left: 250px;
     letter-spacing: 3px;
     text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
   }
+  hr {
+    width: 300px;
+    margin: 0 auto;
+  }
   footer {
-    padding-top: 2300px;
     text-align: center;
   }
 }

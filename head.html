@@ -20,50 +20,49 @@
 <body>
 
     <!-- 開場動畫 -->
-    <div id="open">
+    <!-- <div id="open">
         <h1 id="home">
             <span>Hey guys welcome to</span>
             <span>Aqua Ardente</span>
         </h1>
+    </div> -->
+
+    <!-- 導覽列 -->
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="./head.html"><img src="./photo/logo.png" alt="logo" width="32"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./charge.html">CHARGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./beer.html">Beer</a></li>
+                            <li><a class="dropdown-item" href="./cocktail.html">Cocktail</a></li>
+                            <li><a class="dropdown-item" href="./non-alc.html">Non-alcohol</a></li>
+                            <li><a class="dropdown-item" href="./food.html">Food</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
 
     <div class="container-fluid">
-        <!-- 導覽列 -->
-        <div id="nav">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./head.html"><img src="./photo/logo.png" alt="logo" width="32"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./charge.html">CHARGE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    MENU
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="./beer.html">Beer</a></li>
-                                    <li><a class="dropdown-item" href="./cocktail.html">Cocktail</a></li>
-                                    <li><a class="dropdown-item" href="./non-alc.html">Non-alcohol</a></li>
-                                    <li><a class="dropdown-item" href="./food.html">Food</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+
 
         <!-- 首頁 -->
 
@@ -100,7 +99,7 @@
                     <div id="text1">
                         <img src="" alt="">
                         <h1>Promotion ｜ 促銷</h1>
-                        <hr>
+                        <hr width="500px">
                         <h3>2月-3月期間</h3>
                         <p class="pp">五人以上訂位招待乙份“小炸物拼盤（價值200元）“<br>
                             十人以上訂位招待乙份“大炸物拼盤（價值350元）”
@@ -112,7 +111,7 @@
                 <div id="box2">
                     <div id="text2">
                         <h1>Events ｜ 活動</h1>
-                        <hr>
+                        <hr width="500px">
                         <h3>1月11日 - 光棍配對</h3>
                         <h5>我不孤單，酒是缺個邱比特</h5>
                         <p class="pp">當日午夜12:00入場，暢飲1人700元。<br>
@@ -124,25 +123,19 @@
                         <img src="./photo/2p.jpg" alt="">
                     </div>
                     <div id="p2">
-                        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-mirror="false">Events</h1>
-                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500" data-aos-mirror="false">
+                        <h1 data-aos="fade-right" data-aos-duration="1000">Events</h1>
+                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
                             enjoy with you tonight. <br>
                             ● Let's looking for words in the picture!</p>
                     </div>
                 </div>
-
-
-
             </div>
-
         </section>
-
-        <footer>
-            <p>&copy;copyright 2021 - Aqua</p>
-        </footer>
-
-
     </div>
+
+    <footer>
+        &copy;copyright 2021 - Aqua
+    </footer>
 
 
 

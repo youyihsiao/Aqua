@@ -13,7 +13,8 @@ $moblie: 767px;
 
 .container-fluid {
     padding: 0 !important;
-  }
+    overflow: hidden;
+}
 
 // OPEN頁面
 
@@ -22,7 +23,7 @@ $moblie: 767px;
 }
 
 body {
-    position: relative;
+    width: 100%;
 }
 
 @keyframes hide {
@@ -44,7 +45,7 @@ body {
     /*   將彈性項目對準容器的中央： */
     justify-content: center;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     color: #000;
     background-color: var(--bg-color);
@@ -196,6 +197,7 @@ h1 {
     display: grid;
     grid-template-columns: 20% 80%;
     margin-bottom: 100px;
+    overflow: hidden;
 
     #prom-big {
         margin-left: 150px;
@@ -268,11 +270,13 @@ h1 {
             display: grid;
             grid-template-columns: 50% 50%;
             padding-bottom: 250px;
+            overflow: hidden;
         }
 
         #box2 {
             display: grid;
             grid-template-columns: 50% 50%;
+            // overflow: hidden;
         }
 
         #text1,
@@ -296,7 +300,6 @@ h1 {
             .pp {
                 letter-spacing: 3px;
             }
-
         }
 
         #p1,
@@ -312,9 +315,9 @@ h1 {
 }
 
 footer {
-    p {
-        text-align: center;
-    }
+    text-align: left;
+    padding-top: 50px;
+    bottom: 0;
 }
 
 // 平板
@@ -324,6 +327,7 @@ footer {
         width: 100%;
         height: 100vh;
     }
+
     #banner {
         background-image: url(./photo/bg.png);
         width: 100%;
@@ -336,14 +340,14 @@ footer {
             grid-template-columns: 40% 60%;
 
             img {
-                display: inline;
+                display: none;
                 margin-left: 80px;
                 width: 100%;
                 height: 100vh;
             }
 
             #intro {
-                padding: 570px 80px;
+                padding: 570px 50px;
                 color: azure;
                 text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
 
@@ -364,14 +368,15 @@ footer {
         display: grid;
         grid-template-columns: 20% 80%;
         margin-bottom: 100px;
-        overflow: hidden;
+        height: 2000px;
+        // overflow: hidden;
 
         #prom-big {
             margin-left: 50px;
 
             display: block;
             background-image: url(./photo/prom.png);
-            background-position: center;
+            background-position: 0 400px;
             background-size: contain;
             background-repeat: no-repeat;
             width: 100%;
@@ -390,10 +395,10 @@ footer {
         #box {
             display: grid;
             margin: 0;
-            grid-template-rows: 50% 50%;
-            margin-top: 150px;
-            margin-left: 80px;
-            margin-right: 80px;
+            grid-template-rows: 50% 50% 50%;
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
             position: absolute;
 
             animation: none;
@@ -403,8 +408,10 @@ footer {
                 position: relative;
                 right: 0px;
                 top: none;
-                left: 230px;
+                left: 0px;
                 bottom: 100px;
+                padding-top: 100px;
+                padding-left: 300px;
 
                 &:hover img {
                     position: none;
@@ -412,7 +419,7 @@ footer {
                 }
 
                 img {
-                    width: 480px;
+                    width: 400px;
                     height: 250px;
                     z-index: 2;
                     right: 0;
@@ -423,9 +430,10 @@ footer {
             .cover2 {
                 position: relative;
                 right: 0px;
-                top: 300px;
-                left: 230px;
+                top: 0;
+                left: 0px;
                 bottom: none;
+                padding-left: 300px;
 
                 &:hover img {
                     position: none;
@@ -433,7 +441,7 @@ footer {
                 }
 
                 img {
-                    width: 480px;
+                    width: 400px;
                     height: 250px;
                     z-index: 2;
                     right: 0;
@@ -450,7 +458,7 @@ footer {
 
             #box2 {
                 grid-template-columns: none;
-                grid-template-rows: 50% 50%;
+                grid-template-rows: 50% 50% 50%;
             }
 
             #text1 {
@@ -488,14 +496,14 @@ footer {
             #text2 {
                 text-align: center;
                 padding-left: 300px;
-                padding-top: 400px;
+                padding-top: 100px;
             }
 
             #p2 {
                 text-align: center;
-                padding-top: 100px;
-                padding-bottom: 100px;
-                padding-left: 300px;
+                // padding-top: 100px;
+                // padding-bottom: 100px;
+                padding-left: 250px;
                 letter-spacing: 3px;
 
                 text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
@@ -503,8 +511,12 @@ footer {
         }
     }
 
+    hr {
+        width: 300px;
+        margin: 0 auto;
+    }
+
     footer {
-        padding-top: 1800px;
         text-align: center;
     }
 }
@@ -514,6 +526,10 @@ footer {
         width: 100%;
         height: 100vh;
     }
+
+    .container-fluid {
+        width: 100%;
+    }
     #banner {
         background-image: url(./photo/bg.png);
         width: 100%;
@@ -522,7 +538,7 @@ footer {
         overflow: hidden;
 
         .pic {
-            display: block;
+            display: grid;
             grid-template-columns: 40% 60%;
 
             img {
@@ -533,7 +549,7 @@ footer {
             }
 
             #intro {
-                padding: 200px 10px;
+                padding: 570px 50px;
                 color: azure;
                 text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
 
@@ -552,38 +568,38 @@ footer {
 
     #prom {
         display: grid;
-        grid-template-columns: 10% 80%;
+        grid-template-columns: 40% 60%;
         margin-bottom: 100px;
-        overflow: hidden;
+        // overflow: hidden;
 
         #prom-big {
-            margin-left: 10px;
+            margin-left: 0px;
 
-            display: none;
+            display: block;
             background-image: url(./photo/prom.png);
-            background-position: center;
+            background-position: 0 250px;
             background-size: contain;
             background-repeat: no-repeat;
             width: 100%;
 
             h1 {
-                font-size: 30px;
+                font-size: 70px;
                 writing-mode: vertical-lr;
-                padding-top: 50px;
+                padding-top: 100px;
                 margin-left: 25px;
 
                 color: #444c59;
-                text-shadow: 3px 10px 5px (gray);
+                text-shadow: 5px 10px 5px (gray);
             }
         }
 
         #box {
             display: grid;
             margin: 0;
-            grid-template-rows: 50% 50%;
-            margin-top: 150px;
-            margin-left: 5px;
-            margin-right: 5px;
+            grid-template-rows: 50% 50% 50%;
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
             position: absolute;
 
             animation: none;
@@ -593,8 +609,10 @@ footer {
                 position: relative;
                 right: 0px;
                 top: none;
-                left: 25px;
-                height: 300px;
+                left: 0px;
+                bottom: 100px;
+                padding-top: 100px;
+                padding-left: 300px;
 
                 &:hover img {
                     position: none;
@@ -602,8 +620,8 @@ footer {
                 }
 
                 img {
-                    width: 300px;
-                    height: 200px;
+                    width: 400px;
+                    height: 250px;
                     z-index: 2;
                     right: 0;
                     transition: 1.5s;
@@ -613,10 +631,10 @@ footer {
             .cover2 {
                 position: relative;
                 right: 0px;
-                top: 100px;
-                left: 25px;
+                top: 0;
+                left: 0px;
                 bottom: none;
-                height: 200px;
+                padding-left: 300px;
 
                 &:hover img {
                     position: none;
@@ -624,8 +642,8 @@ footer {
                 }
 
                 img {
-                    width: 300px;
-                    height: 200px;
+                    width: 400px;
+                    height: 250px;
                     z-index: 2;
                     right: 0;
                     transition: 1.5s;
@@ -641,43 +659,36 @@ footer {
 
             #box2 {
                 grid-template-columns: none;
-                grid-template-rows: 50% 50%;
+                grid-template-rows: 50% 50% 50%;
             }
 
-            #text1,
-            #text2 {
+            #text1 {
                 text-align: center;
-                padding-left: 5px;
-                padding-top: 0px;
+                padding-left: 300px;
+                padding-top: none;
 
                 h1 {
                     text-shadow: 5px 3px 1px (rgba(128, 128, 128, 0.514));
                     grid-gap: 3px;
-                    font-size: 21px;
                 }
 
                 h3 {
                     font-weight: 900;
                     letter-spacing: 5px;
-                    font-size: 16px;
                 }
                 h5 {
                     font-weight: 800;
                     letter-spacing: 5px;
-                    font-size: 12px;
                 }
 
                 .pp {
                     letter-spacing: 3px;
-                    font-size: 8px;
                 }
             }
 
             #p1 {
                 text-align: center;
-                padding-top: 100px;
-                padding-bottom: 150px;
-                padding-left: 5px;
+                padding-left: 250px;
                 letter-spacing: 3px;
 
                 text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
@@ -685,15 +696,15 @@ footer {
 
             #text2 {
                 text-align: center;
-                padding-left: 5px;
-                padding-top: 200px;
+                padding-left: 300px;
+                padding-top: 100px;
             }
 
             #p2 {
                 text-align: center;
-                padding-top: 0px;
-                padding-bottom: 100px;
-                padding-left: 5px;
+                // padding-top: 100px;
+                // padding-bottom: 100px;
+                padding-left: 250px;
                 letter-spacing: 3px;
 
                 text-shadow: 3px 5px 5px rgba(129, 47, 47, 0.664);
@@ -701,10 +712,12 @@ footer {
         }
     }
 
-    footer {
-        padding-top: 2300px;
-        text-align: center;
+    hr {
+        width: 300px;
+        margin: 0 auto;
     }
 
-
+    footer {
+        text-align: center;
+    }
 }
