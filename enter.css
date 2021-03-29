@@ -278,6 +278,13 @@ body {
   height: 400px;
   position: absolute;
   left: 330px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#prom #abox img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #prom #abox .box {
@@ -285,6 +292,14 @@ body {
   height: 400px;
   background-color: rgba(5, 51, 104, 0.603);
   margin-left: 150px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#prom #abox .box:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background-color: rgba(104, 5, 5, 0.603);
 }
 
 #prom #abox #inside1 {
@@ -295,22 +310,50 @@ body {
 
 #prom #abox #inside1 h1 {
   text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#prom #abox #inside1 h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #prom #abox #inside1 .p {
   font-size: 20px;
   padding-bottom: 50px;
   text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#prom #abox #inside1 .p:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #prom #abox #inside1 .q h3 {
   padding-bottom: 8px;
   text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#prom #abox #inside1 .q h3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #prom #abox #inside1 .q .pp {
   color: dimgrey;
   text-shadow: 3px 2px 2px rgba(5, 51, 104, 0.603);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#prom #abox #inside1 .q .pp:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #bbox {
@@ -327,6 +370,13 @@ body {
   height: 400px;
   position: absolute;
   left: 250px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#bbox img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #bbox .box {
@@ -334,6 +384,14 @@ body {
   height: 400px;
   background-color: rgba(104, 5, 5, 0.603);
   margin-left: 150px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#bbox .box:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background-color: rgba(5, 51, 104, 0.603);
 }
 
 #bbox #inside2 {
@@ -344,29 +402,64 @@ body {
 
 #bbox #inside2 h1 {
   text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#bbox #inside2 h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #bbox #inside2 .p {
   font-size: 20px;
   padding-bottom: 30px;
   text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#bbox #inside2 .p:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #bbox #inside2 .q h3 {
   padding-bottom: 5px;
   text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#bbox #inside2 .q h3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #bbox #inside2 .q h5 {
   font-size: 20px;
   text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
   padding-top: 10px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#bbox #inside2 .q h5:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #bbox #inside2 .q .pp {
   color: dimgrey;
   text-shadow: 1px 2px 2px rgba(104, 5, 5, 0.603);
   padding-top: 5px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#bbox #inside2 .q .pp:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer {
@@ -388,7 +481,7 @@ footer {
             animation-delay: 4s;
   }
   #banner #intro {
-    padding: 400px 500px;
+    padding: 400px 200px;
     color: azure;
     text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
     overflow: hidden;
@@ -430,20 +523,13 @@ footer {
     width: 300px;
     height: 400px;
     position: absolute;
-    left: 330px;
+    left: 110px;
   }
   #prom #abox .box {
     width: 300px;
     height: 400px;
     background-color: rgba(5, 51, 104, 0.603);
-    margin-left: 150px;
-    cursor: pointer;
-    -webkit-transition: 1.3s;
-    transition: 1.3s;
-  }
-  #prom #abox .box:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    margin-left: 50px;
   }
   #prom #abox #inside1 {
     padding-top: 100px;
@@ -475,20 +561,162 @@ footer {
     position: relative;
   }
   #bbox img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     position: absolute;
-    left: 250px;
+    left: 80px;
   }
   #bbox .box {
     width: 300px;
     height: 400px;
     background-color: rgba(104, 5, 5, 0.603);
-    margin-left: 150px;
+    margin-left: 50px;
   }
   #bbox #inside2 {
     padding-top: 50px;
     padding-left: 50px;
+    text-align: left;
+  }
+  #bbox #inside2 h1 {
+    text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+  }
+  #bbox #inside2 .p {
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+  }
+  #bbox #inside2 .q h3 {
+    padding-bottom: 5px;
+    text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+  }
+  #bbox #inside2 .q h5 {
+    font-size: 20px;
+    text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+    padding-top: 10px;
+  }
+  #bbox #inside2 .q .pp {
+    color: dimgrey;
+    text-shadow: 1px 2px 2px rgba(104, 5, 5, 0.603);
+    padding-top: 5px;
+  }
+  footer {
+    text-align: center;
+    bottom: 0;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner {
+    background-image: url(./photo/aqua.png);
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-animation: showpic 1s forwards;
+            animation: showpic 1s forwards;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  #banner #intro {
+    padding: 200px 70px;
+    color: azure;
+    text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
+    overflow: hidden;
+  }
+  #banner #intro h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+  }
+  #banner #intro h2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  #prom {
+    padding-top: 100px;
+    -webkit-animation: showpic 1s forwards;
+            animation: showpic 1s forwards;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  #prom #words hr {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #prom #words h1 {
+    text-align: center;
+    color: #4b1e26;
+    text-shadow: 3px 2px 3px rgba(68, 68, 68, 0.562);
+    letter-spacing: 5px;
+  }
+  #prom #abox {
+    padding-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    position: relative;
+  }
+  #prom #abox img {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 70px;
+  }
+  #prom #abox .box {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(5, 51, 104, 0.603);
+    margin-left: 10px;
+  }
+  #prom #abox #inside1 {
+    padding-top: 100px;
+    padding-left: 10px;
+    text-align: left;
+  }
+  #prom #abox #inside1 h1 {
+    text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+  }
+  #prom #abox #inside1 .p {
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+  }
+  #prom #abox #inside1 .q h3 {
+    padding-bottom: 8px;
+    text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+  }
+  #prom #abox #inside1 .q .pp {
+    color: dimgrey;
+    text-shadow: 3px 2px 2px rgba(5, 51, 104, 0.603);
+  }
+  #bbox {
+    padding-top: 100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    position: relative;
+  }
+  #bbox img {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 60px;
+  }
+  #bbox .box {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(104, 5, 5, 0.603);
+    margin-left: 10px;
+  }
+  #bbox #inside2 {
+    padding-top: 50px;
+    padding-left: 10px;
     text-align: left;
   }
   #bbox #inside2 h1 {

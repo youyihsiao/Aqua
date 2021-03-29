@@ -217,6 +217,11 @@ body {
 
             position: absolute;
             left: 330px;
+
+            transition: 1.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
 
         .box {
@@ -224,6 +229,12 @@ body {
             height: 400px;
             background-color: rgba(5, 51, 104, 0.603);
             margin-left: 150px;
+
+            transition: 1.3s;
+            &:hover {
+                transform: scale(0.8);
+                background-color: rgba(104, 5, 5, 0.603);
+            }
         }
 
         #inside1 {
@@ -233,23 +244,43 @@ body {
 
             h1 {
                 text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+
+                transition: 1.3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
 
             .p {
                 font-size: 20px;
                 padding-bottom: 50px;
                 text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+
+                transition: 1.3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
 
             .q {
                 h3 {
                     padding-bottom: 8px;
                     text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+
+                    transition: 1.3s;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
 
                 .pp {
                     color: dimgrey;
                     text-shadow: 3px 2px 2px rgba(5, 51, 104, 0.603);
+
+                    transition: 1.3s;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
             }
         }
@@ -268,6 +299,11 @@ body {
 
         position: absolute;
         left: 250px;
+
+        transition: 1.3s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     .box {
@@ -275,6 +311,12 @@ body {
         height: 400px;
         background-color: rgba(104, 5, 5, 0.603);
         margin-left: 150px;
+
+        transition: 1.3s;
+        &:hover {
+            transform: scale(0.8);
+            background-color: rgba(5, 51, 104, 0.603);
+        }
     }
 
     #inside2 {
@@ -284,30 +326,55 @@ body {
 
         h1 {
             text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+
+            transition: 1.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
 
         .p {
             font-size: 20px;
             padding-bottom: 30px;
             text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+
+            transition: 1.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
 
         .q {
             h3 {
                 padding-bottom: 5px;
                 text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+
+                transition: 1.3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
 
             h5 {
                 font-size: 20px;
                 text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
                 padding-top: 10px;
+
+                transition: 1.3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
 
             .pp {
                 color: dimgrey;
                 text-shadow: 1px 2px 2px rgba(104, 5, 5, 0.603);
                 padding-top: 5px;
+
+                transition: 1.3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -335,7 +402,7 @@ footer {
         animation-delay: 4s;
 
         #intro {
-            padding: 400px 500px;
+            padding: 400px 200px;
             color: azure;
             text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
             overflow: hidden;
@@ -383,21 +450,14 @@ footer {
                 height: 400px;
 
                 position: absolute;
-                left: 330px;
+                left: 110px;
             }
 
             .box {
                 width: 300px;
                 height: 400px;
                 background-color: rgba(5, 51, 104, 0.603);
-                margin-left: 150px;
-
-                cursor: pointer;
-
-                transition: 1.3s;
-                &:hover {
-                    transform: scale(1.3);
-                }
+                margin-left: 50px;
             }
 
             #inside1 {
@@ -437,18 +497,18 @@ footer {
         position: relative;
 
         img {
-            width: 400px;
-            height: 400px;
+            width: 350px;
+            height: 350px;
 
             position: absolute;
-            left: 250px;
+            left: 80px;
         }
 
         .box {
             width: 300px;
             height: 400px;
             background-color: rgba(104, 5, 5, 0.603);
-            margin-left: 150px;
+            margin-left: 50px;
         }
 
         #inside2 {
@@ -497,4 +557,167 @@ footer {
 // 手機
 
 @media screen and (max-width: 767px) {
+    #banner {
+        background-image: url(./photo/aqua.png);
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+        animation: showpic 1s forwards;
+        animation-delay: 4s;
+
+        #intro {
+            padding: 200px 70px;
+            color: azure;
+            text-shadow: 10px 10px 5px rgba(56, 10, 10, 0.753);
+            overflow: hidden;
+
+            h1 {
+                font-size: 80px;
+                letter-spacing: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    #prom {
+        padding-top: 100px;
+
+        animation: showpic 1s forwards;
+        animation-delay: 4s;
+
+        #words {
+            hr {
+                width: 400px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                text-align: center;
+                color: rgb(75, 30, 38);
+                text-shadow: 3px 2px 3px rgba(68, 68, 68, 0.562);
+                letter-spacing: 5px;
+            }
+        }
+
+        #abox {
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns:none;
+            grid-template-rows: 50% 50%;
+            position: relative;
+
+            img {
+                width: 300px;
+                height: 400px;
+
+                position: absolute;
+                left: 70px;
+            }
+
+            .box {
+                width: 300px;
+                height: 400px;
+                background-color: rgba(5, 51, 104, 0.603);
+                margin-left: 10px;
+            }
+
+            #inside1 {
+                padding-top: 100px;
+                padding-left: 10px;
+                text-align: left;
+
+                h1 {
+                    text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+                }
+
+                .p {
+                    font-size: 20px;
+                    padding-bottom: 50px;
+                    text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+                }
+
+                .q {
+                    h3 {
+                        padding-bottom: 8px;
+                        text-shadow: 3px 2px 3px rgba(5, 51, 104, 0.603);
+                    }
+
+                    .pp {
+                        color: dimgrey;
+                        text-shadow: 3px 2px 2px rgba(5, 51, 104, 0.603);
+                    }
+                }
+            }
+        }
+    }
+
+    #bbox {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+        position: relative;
+
+        img {
+            width: 350px;
+            height: 350px;
+
+            position: absolute;
+            left: 60px;
+        }
+
+        .box {
+            width: 300px;
+            height: 400px;
+            background-color: rgba(104, 5, 5, 0.603);
+            margin-left: 10px;
+        }
+
+        #inside2 {
+            padding-top: 50px;
+            padding-left: 10px;
+            text-align: left;
+
+            h1 {
+                text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+            }
+
+            .p {
+                font-size: 20px;
+                padding-bottom: 30px;
+                text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+            }
+
+            .q {
+                h3 {
+                    padding-bottom: 5px;
+                    text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+                }
+
+                h5 {
+                    font-size: 20px;
+                    text-shadow: 3px 2px 3px rgba(104, 5, 5, 0.603);
+                    padding-top: 10px;
+                }
+
+                .pp {
+                    color: dimgrey;
+                    text-shadow: 1px 2px 2px rgba(104, 5, 5, 0.603);
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        bottom: 0;
+        padding-top: 100px;
+    }
 }
