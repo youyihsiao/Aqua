@@ -15,10 +15,6 @@ body {
     position: fixed;
     width: 100%;
     z-index: 33;
-
-    nav {
-        overflow: hidden;
-    }
 }
 
 .navbar-brand {
@@ -27,7 +23,7 @@ body {
 
 .container-fluid {
     padding: 0 !important;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 // 開頭頁

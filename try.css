@@ -1,0 +1,433 @@
+:root {
+  --main-bg-color: #d6b9a4;
+  --cup-color: #474747;
+  --cup-width: 30vw;
+  --cup-height: 40vw;
+  --cup-border-width: 2vw;
+  --cup-inside-width: calc(var(--cup-width) - var(--cup-border-width));
+  --cup-inside-height: calc(var(--cup-height) - var(--cup-border-width));
+  --border-width: 1vw;
+  --main-border: var(--border-width) solid var(--cup-color);
+  --plate-width: 25vw;
+  --plate-height: 2vw;
+  --Tequila-bottom: 80%;
+  --Sugar-bottom: 0;
+  --Water-bottom: 0;
+  --Grin-bottom: 0;
+  --Whisky-bottom: 0;
+  --Absinthe-bottom: 0;
+  --Bitter_spirit-bottom: 0;
+  --whipped_cream-bottom: 0;
+  --Orangr_Wine-bottom: 0;
+  --Lemon-bottom: 0;
+  --Rum-bottom: 0;
+  --Soda-bottom: 0;
+  --Mint-bottom: 0;
+  --Sugarcane_Juice-bottom: 0;
+  --Vodka-bottom: 0;
+  --Peach_juice-bottom: 0;
+  --Orange_juice-bottom: 0;
+  --Cranberry_juice-bottom: 0;
+  --Cola-bottom: 0;
+  --Tequila-color: Ivory;
+  --Whisky-color: #d2691e;
+  --Grin-color: #b1dce2;
+  --Lemon-color: #fceecb;
+  --Orangr_Wine-color: #ffd7b3;
+  --Bitter_spirit-color: #cd5c5c;
+  --Absinthe-color: green;
+  --Sugar-color: white;
+  --Water-color: #b1dce2;
+  --Rum-color: #ffa07a;
+  --Soda-color: #f5fffa;
+  --Mint-color: #00fa9a;
+  --Sugarcane_Juice-color: #eee8aa;
+  --Vodka-color: #afeeee;
+  --Peach_juice-color: #ffefd5;
+  --Orange_juice-color: #ffa500;
+  --Cranberry_juice-color: #800080;
+  --Cola-color: #a52a2a;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--main-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.social {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70vw;
+}
+
+.coffee_name {
+  color: #f1faee;
+  text-align: center;
+  /*   width: 100%; */
+  font-size: 4vw;
+}
+
+.options {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 4vh;
+  -ms-grid-rows: (40px)[2];
+      grid-template-rows: repeat(2, 40px);
+  -ms-grid-columns: 120px;
+      grid-template-columns: 120px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.options button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: rgba(214, 217, 227, 0.6);
+  outline: none;
+  font-size: 1rem;
+  border: 2px solid #a67a60;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #363636;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1vh;
+  height: 60px;
+  width: 150px;
+}
+
+.options button:hover {
+  cursor: pointer;
+  border-width: 4px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.options .selected {
+  border-width: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cup {
+  width: var(--cup-width);
+  height: var(--cup-height);
+  border-radius: 0 0 10vw 10vw;
+  position: relative;
+  background-color: var(--cup-color);
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cup::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: calc(100% - 1vw);
+  border-radius: 50% 30%;
+}
+
+.plate {
+  position: absolute;
+  top: calc(100% + 1vw);
+  left: calc((var(--cup-width) - var(--plate-width)) / 2);
+  width: var(--plate-width);
+  background: var(--cup-color);
+  height: var(--plate-height);
+  border-radius: 1vw;
+}
+
+.filling {
+  position: absolute;
+  left: calc(var(--cup-border-width) / 2);
+  bottom: calc(var(--cup-border-width) / 2);
+  width: var(--cup-inside-width);
+  height: var(--cup-inside-height);
+  overflow: hidden;
+  border-radius: 0 0 10vw 10vw;
+  background-color: var(--main-bg-color);
+  bottom: 1vw;
+}
+
+.filling div {
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  color: #817f75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 0;
+  overflow: hidden;
+  font-size: 3vw;
+  height: 100%;
+  bottom: -100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.filling.reset.Margarita {
+  --Tequila-bottom: -65%;
+  --Orangr_Wine-bottom: -35%;
+  --Lemon-bottom: 0;
+}
+
+.filling.reset.Martini {
+  --Grin-bottom: -40%;
+  --Absinthe-bottom: -15%;
+  --Bitter_spirit-bottom: 0%;
+}
+
+.filling.reset.Manhattan {
+  --Whisky-bottom: -40%;
+  --Absinthe-bottom: -15%;
+  --Bitter_spirit-bottom: 0%;
+}
+
+.filling.reset.Classic {
+  --Whisky-bottom: -60%;
+  --Water-bottom: -30%;
+  --Sugar-bottom: -15%;
+  --Bitter_spirit-bottom: 0%;
+}
+
+.filling.reset.Mojito {
+  --Rum-bottom: -70%;
+  --Sugarcane_Juice-bottom: -40%;
+  --Soda-bottom: -20%;
+  --Lemon-bottom: -10%;
+  --Mint-bottom: 0%;
+}
+
+.filling.reset.SexOnTheBeach {
+  --Vodka-bottom: -70%;
+  --Peach_juice-bottom: -40%;
+  --Orange_juice-bottom: -20%;
+  --Cranberry_juice-bottom: 0%;
+}
+
+div.Rum {
+  background: var(--Rum-color);
+  bottom: var(--Rum-bottom);
+  line-height: 4vw;
+  z-index: 7;
+}
+
+div.Sugarcane_Juice {
+  background: var(--Sugarcane_Juice-color);
+  bottom: var(--Sugarcane_Juice-bottom);
+  line-height: 4vw;
+  z-index: 5;
+}
+
+.filling.reset.LongIslandIcedTea {
+  --Cola-bottom: -90%;
+  --Rum-bottom: -70%;
+  --Vodka-bottom: -40%;
+  --Tequila-bottom: -20%;
+  --Grin-bottom: -10%;
+  --Lemon-bottom: 0%;
+}
+
+div.Soda {
+  background: var(--Soda-color);
+  bottom: var(--Soda-bottom);
+  line-height: 4vw;
+  z-index: 4;
+}
+
+div.Mint {
+  background: var(--Mint-color);
+  bottom: var(--Mint-bottom);
+  line-height: 4vw;
+  z-index: 3;
+}
+
+div.Whisky {
+  background: var(--Whisky-color);
+  bottom: var(--Whisky-bottom);
+  line-height: 4vw;
+  z-index: 7;
+}
+
+div.Grin {
+  background: var(--Grin-color);
+  bottom: var(--Grin-bottom);
+  line-height: 4vw;
+  z-index: 5;
+}
+
+div.Tequila {
+  background: var(--Tequila-color);
+  bottom: var(--Tequila-bottom);
+  line-height: 4vw;
+  z-index: 5;
+}
+
+div.Water {
+  background: var(--Water-color);
+  bottom: var(--Water-bottom);
+  z-index: 5;
+}
+
+div.Sugar {
+  background: var(--Sugar-color);
+  bottom: var(--Sugar-bottom);
+  line-height: 4vw;
+  z-index: 5;
+}
+
+div.Bitter_spirit {
+  background: var(--Bitter_spirit-color);
+  bottom: var(--Bitter_spirit-bottom);
+  z-index: 2;
+}
+
+div.Lemon {
+  background: var(--Lemon-color);
+  bottom: var(--Lemon-bottom);
+  z-index: 3;
+}
+
+div.Orangr_Wine {
+  background: var(--Orangr_Wine-color);
+  bottom: var(--Orangr_Wine-bottom);
+  z-index: 4;
+}
+
+div.Absinthe {
+  background: var(--Absinthe-color);
+  bottom: var(--Absinthe-bottom);
+  z-index: 4;
+}
+
+div.Vodka {
+  background: var(--Vodka-color);
+  bottom: var(--Vodka-bottom);
+  z-index: 6;
+}
+
+div.Peach_juice {
+  background: var(--Peach_juice-color);
+  bottom: var(--Peach_juice-bottom);
+  z-index: 5;
+}
+
+div.Orange_juice {
+  background: var(--Orange_juice-color);
+  bottom: var(--Orange_juice-bottom);
+  z-index: 4;
+}
+
+div.Cranberry_juice {
+  background: var(--Cranberry_juice-color);
+  bottom: var(--Cranberry_juice-bottom);
+  z-index: 3;
+}
+
+div.Cola {
+  background: var(--Cola-color);
+  bottom: var(--Cola-bottom);
+  z-index: 8;
+}
+
+.filling.reset {
+  --Tequila-bottom: -100%;
+  --Absinthe-bottom: -100%;
+  --Grin-bottom: -100%;
+  --Bitter_spirit-bottom: -100%;
+  --Water-bottom: -100%;
+  --Orangr_Wine-bottom: -100%;
+  --Lemon-bottom: -100%;
+  --Whisky-bottom: -100%;
+  --Sugar-bottom: -100%;
+  --Water-bottom: -100%;
+  --Rum-bottom: -100%;
+  --Soda-bottom: -100%;
+  --Mint-bottom: -100%;
+  --Sugarcane_Juice-bottom: -100%;
+  --Vodka-bottom: -100%;
+  --Peach_juice-bottom: -100%;
+  --Orange_juice-bottom: -100%;
+  --Cranberry_juice-bottom: -100%;
+  --Cola-bottom: -100%;
+}
+
+#back {
+  margin-top: 800px;
+  margin-left: -80px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#back:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#back a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  #back {
+    margin-top: 600px;
+    margin-left: 0px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  #back:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  #back a {
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=try.css.map */
