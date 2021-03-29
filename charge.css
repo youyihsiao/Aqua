@@ -103,6 +103,8 @@
 
 footer {
   text-align: center;
+  bottom: 0;
+  padding-top: 100px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -112,6 +114,11 @@ footer {
   }
   #box {
     padding: 0px 0px;
+  }
+  footer {
+    text-align: center;
+    bottom: 0;
+    padding-top: 100px;
   }
 }
 
@@ -124,7 +131,9 @@ footer {
     padding: 0px 0px;
   }
   footer {
-    padding-top: 1400px;
+    text-align: center;
+    bottom: 0;
+    padding-top: 100px;
   }
 }
 /*# sourceMappingURL=charge.css.map */

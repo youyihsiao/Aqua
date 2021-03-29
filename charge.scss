@@ -97,6 +97,8 @@
 
 footer {
     text-align: center;
+    bottom: 0;
+    padding-top: 100px;
 }
 
 // RWD
@@ -111,6 +113,12 @@ footer {
 
     #box {
         padding: 0px 0px;
+    }
+
+    footer {
+        text-align: center;
+        bottom: 0;
+        padding-top: 100px;
     }
 }
 
@@ -127,6 +135,8 @@ footer {
     }
 
     footer {
-        padding-top: 1400px;
+        text-align: center;
+        bottom: 0;
+        padding-top: 100px;
     }
 }
