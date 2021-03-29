@@ -14,11 +14,15 @@ body {
 #nav {
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 33;
 }
 
 #nav nav {
   overflow: hidden;
+}
+
+.navbar-brand {
+  padding-left: 30px;
 }
 
 .container-fluid {
@@ -27,7 +31,6 @@ body {
 }
 
 #card {
-  padding-top: 80px;
   border-radius: 5px;
   color: white;
   background-image: url(./photo/3people.JPG);
@@ -36,13 +39,13 @@ body {
      object-fit: cover;
   background-repeat: no-repeat;
   background-position: 150px -155px;
-  overflow: hidden;
 }
 
 #content {
   padding: 50px 80px;
   margin-bottom: -20px;
   margin-left: 900px;
+  overflow: hidden;
 }
 
 #content h1 {

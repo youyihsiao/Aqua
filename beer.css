@@ -25,6 +25,7 @@
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
   padding-top: 100px;
+  overflow: hidden;
 }
 
 #circle {
@@ -104,6 +105,7 @@
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
     padding-top: 100px;
+    overflow: hidden;
   }
   #circle {
     width: 900px;
@@ -167,6 +169,7 @@
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
     padding-top: 100px;
+    overflow: hidden;
   }
   #circle {
     width: 900px;

@@ -63,6 +63,7 @@
 
 #box .card h5 {
   text-align: center;
+  text-shadow: 3px 2px 3px rgba(85, 83, 83, 0.719);
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -79,6 +80,7 @@
 
 #words h1 {
   text-align: center;
+  text-shadow: 2px 3px 3px rgba(139, 139, 139, 0.664);
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
@@ -129,11 +131,12 @@ footer {
   }
   #box {
     padding: 0px 0px;
+    height: 100vh;
   }
   footer {
     text-align: center;
     bottom: 0;
-    padding-top: 100px;
+    padding-top: 1400px;
   }
 }
 /*# sourceMappingURL=charge.css.map */

@@ -237,11 +237,27 @@ body {
 #banner #intro h1 {
   font-size: 86px;
   letter-spacing: 10px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#banner #intro h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: darkgray;
 }
 
 #banner #intro h2 {
   font-size: 20px;
   letter-spacing: 5px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#banner #intro h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: darkgray;
 }
 
 #prom {
@@ -262,6 +278,13 @@ body {
   color: #4b1e26;
   text-shadow: 3px 2px 3px rgba(68, 68, 68, 0.562);
   letter-spacing: 5px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#prom #words h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #prom #abox {

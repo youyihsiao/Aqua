@@ -176,11 +176,23 @@ body {
         h1 {
             font-size: 86px;
             letter-spacing: 10px;
+
+            transition: 0.8s;
+            &:hover {
+                transform: scale(1.2);
+                color: darkgray;
+            }
         }
 
         h2 {
             font-size: 20px;
             letter-spacing: 5px;
+
+            transition: 0.8s;
+            &:hover {
+                transform: scale(1.2);
+                color: darkgray;
+            }
         }
     }
 }
@@ -202,6 +214,11 @@ body {
             color: rgb(75, 30, 38);
             text-shadow: 3px 2px 3px rgba(68, 68, 68, 0.562);
             letter-spacing: 5px;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 
